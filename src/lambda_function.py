@@ -75,14 +75,14 @@ def lambda_handler(event, context):
             if storage.is_subscribed(email):
                 return format_response({
                     "success": True,
-                    "message": "You are already subscribed to the newsletter"
+                    "message": "You have successfully subscribed to the newsletter!"
                 }, 200)
                 
             if storage.add_subscriber(email):
                 logger.info(f"Successfully subscribed: {email}")
                 return format_response({
                     "success": True,
-                    "message": "Successfully subscribed to the newsletter"
+                    "message": "You have successfully subscribed to the newsletter!"
                 }, 201)
             else:
                 logger.error(f"Failed to add subscriber: {email}")

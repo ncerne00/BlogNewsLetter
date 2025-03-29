@@ -12,7 +12,7 @@ This project provides a decoupled newsletter subscription API built with Flask. 
 - Greater flexibility in infrastructure choices
 - Reusability across multiple frontend projects
 
-The API follows a clean architecture pattern with storage abstraction, making it easy to switch between different database solutions without changing the core business logic.
+The API follows a clean architecture pattern with storage abstraction, making it easy to switch between different database solutions without changing the core business logic. The API can either be deployed as a Flask server or an API Lambda. 
 
 ## Features
 
@@ -25,6 +25,8 @@ The API follows a clean architecture pattern with storage abstraction, making it
 
 ## Planned Features
 - More storage options, supporting GCP and Azure
+- Azure function support
+- GCP function support
 
 ## Installation
 
